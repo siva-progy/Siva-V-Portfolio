@@ -27,10 +27,10 @@ export const socials: SocialLink[] = [
     icon: "github",
   },
   {
-    label: "LinkedIn",
-    href: "www.linkedin.com/in/siva-suburamaniyam",
-    icon: "linkedin",
-  },
+  label: "LinkedIn",
+  href: "https://www.linkedin.com/in/siva-suburamaniyam",
+  icon: "linkedin",
+},
   {
     label: "Email",
     href: "mailto:sivav6064@gmail.com",
