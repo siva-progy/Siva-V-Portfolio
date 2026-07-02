@@ -1,0 +1,184 @@
+@import "tailwindcss";
+
+/* Class-based dark mode (next-themes toggles .dark on <html>). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ================================================================== */
+/* DESIGN TOKENS — semantic colors resolve to raw values per theme.   */
+/* Components only ever reference the semantic names (bg, surface,     */
+/* text, accent, …). Light is the base :root; .dark overrides.        */
+/*                                                                     */
+/* NOTE: dark is the *primary* experience. We set the dark values on   */
+/* <html class="dark"> via next-themes defaultTheme="dark".           */
+/* ================================================================== */
+
+:root {
+  /* Light theme (base) */
+  --c-bg: #fbfbfd;
+  --c-surface: #ffffff;
+  --c-surface-2: #f4f4f6;
+  --c-border: #e4e4e8;
+  --c-text: #1a1a1f;
+  --c-text-muted: #5a5a63;
+  --c-text-subtle: #8a8a93;
+  --c-accent: #0ea5e9;
+  --c-accent-hover: #0284c7;
+  --c-accent-muted: rgba(14, 165, 233, 0.1);
+
+  /* Shadows (soft skeuomorphism) — softer on light */
+  --shadow-sm: 0 1px 2px rgba(20, 20, 30, 0.06);
+  --shadow-md: 0 4px 16px rgba(20, 20, 30, 0.08), 0 1px 2px rgba(20, 20, 30, 0.06);
+  --shadow-lg: 0 12px 40px rgba(20, 20, 30, 0.12), 0 2px 8px rgba(20, 20, 30, 0.08);
+  --shadow-raise: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  --glass-bg: rgba(255, 255, 255, 0.7);
+}
+
+.dark {
+  /* Dark theme (primary) */
+  --c-bg: #0a0a0b;
+  --c-surface: #121214;
+  --c-surface-2: #1a1a1d;
+  --c-border: #242428;
+  --c-text: #f5f5f7;
+  --c-text-muted: #a1a1a8;
+  --c-text-subtle: #6e6e76;
+  --c-accent: #38bdf8;
+  --c-accent-hover: #5ccbfa;
+  --c-accent-muted: rgba(56, 189, 248, 0.12);
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.35), 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.45), 0 2px 8px rgba(0, 0, 0, 0.4);
+  --shadow-raise: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  --glass-bg: rgba(18, 18, 20, 0.7);
+}
+
+/* ================================================================== */
+/* @theme — expose tokens to Tailwind's utility engine.               */
+/* Using `inline` so the utilities reference the live CSS vars, which  */
+/* lets a single class (e.g. bg-surface) switch value across themes.   */
+/* ================================================================== */
+
+@theme inline {
+  /* Colors */
+  --color-bg: var(--c-bg);
+  --color-surface: var(--c-surface);
+  --color-surface-2: var(--c-surface-2);
+  --color-border: var(--c-border);
+  --color-text: var(--c-text);
+  --color-muted: var(--c-text-muted);
+  --color-subtle: var(--c-text-subtle);
+  --color-accent: var(--c-accent);
+  --color-accent-hover: var(--c-accent-hover);
+  --color-accent-muted: var(--c-accent-muted);
+
+  /* Fonts */
+  --font-sans: var(--font-satoshi), system-ui, sans-serif;
+  --font-mono: var(--font-mono), ui-monospace, monospace;
+
+  /* Fluid type scale (Phase 2) */
+  --text-display: clamp(3rem, 6vw + 1rem, 6rem);
+  --text-display--line-height: 1.05;
+  --text-h1: clamp(2.25rem, 3vw + 1rem, 3.75rem);
+  --text-h1--line-height: 1.1;
+  --text-h2: clamp(1.75rem, 2vw + 0.5rem, 2.5rem);
+  --text-h2--line-height: 1.15;
+  --text-h3: clamp(1.25rem, 1vw + 0.5rem, 1.5rem);
+  --text-h3--line-height: 1.25;
+  --text-body-lg: 1.125rem;
+  --text-body: 1rem;
+  --text-caption: 0.875rem;
+
+  /* Radii */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+
+  /* Container widths */
+  --container-prose: 720px;
+  --container-content: 1080px;
+  --container-wide: 1280px;
+
+  /* Motion */
+  --ease-premium: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ================================================================== */
+/* Base layer                                                          */
+/* ================================================================== */
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Lenis manages scroll; disable native smooth to avoid conflict. */
+  html.lenis,
+  html.lenis body {
+    height: auto;
+  }
+
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-sans);
+    line-height: 1.65;
+    /* Smooth theme cross-fade without transitioning every property. */
+    transition:
+      background-color 0.4s var(--ease-premium),
+      color 0.4s var(--ease-premium);
+  }
+
+  ::selection {
+    background-color: var(--color-accent-muted);
+    color: var(--color-text);
+  }
+
+  /* Visible, consistent keyboard focus (never suppressed). */
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  /* Reduced motion: collapse all motion to instant. Enforced globally,
+     mirrored at the hook level so no component can opt out. */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+/* ================================================================== */
+/* Reusable surface utilities (soft skeuomorphism)                     */
+/* ================================================================== */
+
+@layer utilities {
+  .surface-raise {
+    box-shadow: var(--shadow-md), var(--shadow-raise);
+  }
+  .surface-raise-lg {
+    box-shadow: var(--shadow-lg), var(--shadow-raise);
+  }
+  .glass {
+    background-color: var(--glass-bg);
+    backdrop-filter: blur(16px) saturate(1.4);
+    -webkit-backdrop-filter: blur(16px) saturate(1.4);
+  }
+  .text-balance {
+    text-wrap: balance;
+  }
+}

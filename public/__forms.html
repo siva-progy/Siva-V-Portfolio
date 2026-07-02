@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<!--
+  Netlify Forms detection file.
+  Next.js does not emit static HTML for React-rendered forms, so the
+  @netlify/plugin-nextjs adapter scans THIS file at deploy time to register
+  the form + fields. Users never see this page. The React ContactForm POSTs
+  its data here (action="/__forms.html"). Keep field names in sync with
+  data/contact.ts (formName) and ContactForm fields.
+-->
+<html>
+  <head><title>Forms</title></head>
+  <body>
+    <form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="contact" />
+      <input name="bot-field" />
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <textarea name="message"></textarea>
+    </form>
+  </body>
+</html>

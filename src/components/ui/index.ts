@@ -1,0 +1,24 @@
+/** Barrel export for UI components — clean single-source imports. */
+export { Button } from "./Button";
+export { Card } from "./Card";
+export { Chip } from "./Chip";
+export { Badge } from "./Badge";
+export { GlassPanel } from "./GlassPanel";
+export { SocialLinks } from "./SocialLinks";
+export { ProjectImage } from "./ProjectImage";
+export { ProviderLogo } from "./ProviderLogo";
+export { ThemeToggle } from "./ThemeToggle";
+export { AnimatedDivider } from "./AnimatedDivider";
+export { ScrollIndicator } from "./ScrollIndicator";
+export { MouseGlow } from "./MouseGlow";
+export { BackgroundLayers } from "./BackgroundLayers";
+export { Reveal } from "./Reveal";
+export { Stagger, StaggerItem } from "./Stagger";
+export { FloatingField } from "./FloatingField";
+export { CopyButton } from "./CopyButton";
+export { MagneticButton } from "./MagneticButton";
+export { Monogram } from "./Monogram";
+export { BackToTop } from "./BackToTop";
+export { AmbientBackground } from "./AmbientBackground";
+export { GrainOverlay } from "./GrainOverlay";
+export { CursorGlow } from "./CursorGlow";
