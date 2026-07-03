@@ -15,7 +15,7 @@ export const profile: Profile = {
 
   email: "sivav6064@gmail.com",
 
-  resumeUrl: "/resume/public/resume/.pdf",
+  resumeUrl: "/resume/Updated_Resume.pdf",
 
   availability: "Open to Data Analyst & Business Analyst Opportunities",
 };
