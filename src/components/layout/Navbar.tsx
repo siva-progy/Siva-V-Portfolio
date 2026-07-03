@@ -66,7 +66,7 @@ export function Navbar() {
               whileHover={reduced ? undefined : { rotate: -6, scale: 1.04 }}
               transition={{ type: "spring", stiffness: 320, damping: 18 }}
             >
-              <Monogram name={profile.name} size={36} />
+            
             </motion.span>
             <span className="hidden text-body font-semibold tracking-tight text-text sm:inline">
               {profile.name.split(" ")[0]}
