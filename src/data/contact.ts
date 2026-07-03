@@ -1,22 +1,12 @@
-/**
- * =========================================================================
- * CONTACT CONTENT — edit this file to update the Contact section copy.
- * Contact details (email, location) are pulled from data/profile.ts to
- * avoid duplication; only the closing narrative lives here.
- * All [PLACEHOLDER] text is written for Siva Suburamaniyam V.
- * =========================================================================
- */
-
 export const contactContent = {
-  // [PLACEHOLDER] Professional closing message — calm, recruiter-focused.
-  heading: "Let's talk.",
+  heading: "Let's Connect.",
+
   message:
-    "I'm early in my career and genuinely excited to do the work. If you're hiring for a data or finance-analytics role — or just want to compare notes — I'd love to hear from you.",
+    "Thank you for visiting my portfolio. I'm actively seeking opportunities as a Data Analyst where I can apply my analytical, automation, and problem-solving skills to deliver meaningful business impact. Whether you have a job opportunity, project collaboration, or simply want to connect, I'd be happy to hear from you.",
 
-  // [PLACEHOLDER] Availability + current role.
-  availability: "Open to Data Analyst opportunities",
-  currentRole: "Fresher · Actively interviewing",
+  availability: "Open to Full-Time Data Analyst Opportunities",
 
-  // The Netlify Forms name attribute (must match the hidden form registration).
+  currentRole: "B.Sc. Information Systems Management Graduate · Data Analyst Aspirant",
+
   formName: "contact",
 };

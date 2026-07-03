@@ -68,9 +68,9 @@ export const projects: Project[] = [
     featured: true,
 
     links: {
-      github: "https://github.com/siva-progy",
-      live: ""
-    }
+  github: "https://github.com/siva-progy",
+  video:"https://www.youtube.com/watch?v=TZ0cfVFx8Ec"
+  }
   }
 ];
 

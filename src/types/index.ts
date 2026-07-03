@@ -82,6 +82,7 @@ export interface SkillCategory {
 export interface ProjectLinks {
   github?: string;
   live?: string;
+  video?: string;
   caseStudy?: string;
 }
 

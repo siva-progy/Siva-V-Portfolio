@@ -1,91 +1,105 @@
 import type { SkillCategory } from "@/types";
-
-/**
- * =========================================================================
- * SKILLS CONTENT — edit this file to update the capability showcase.
- * Each category has an icon, a professional-use description (how the skills
- * are actually applied, not just a list), and skill chips. No proficiency
- * percentages, by design.
- *
- * All content is [PLACEHOLDER]-adjacent and written for a Data Analyst /
- * Finance profile (Siva Suburamaniyam V). Trim skills you don't use.
- * =========================================================================
- */
-
 export const skillCategories: SkillCategory[] = [
   {
     name: "Data Analytics",
     icon: "analytics",
     description:
-      "How I turn raw data into answers — profiling, cleaning, and analysing datasets to find the pattern that actually drives a decision.",
+      "Cleaning, transforming, and analyzing data to uncover meaningful insights that support business decision-making.",
     skills: [
-      "Exploratory Data Analysis",
+      "Microsoft Excel",
+      "SQL",
+      "Python",
       "Data Cleaning",
-      "Statistical Analysis",
-      "Data Modelling",
-      "Forecasting",
-      "A/B Testing",
+      "Data Analysis",
+      "Statistics",
     ],
   },
   {
     name: "Programming",
     icon: "code",
     description:
-      "The languages I reach for to automate analysis and work with data at scale, from quick scripts to reusable pipelines.",
-    skills: ["Python", "pandas", "NumPy", "scikit-learn", "R", "JavaScript"],
+      "Building analytical and automation solutions using modern programming languages and frameworks.",
+    skills: [
+      "Python",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "FastAPI",
+    ],
   },
   {
     name: "Databases",
     icon: "database",
     description:
-      "How I source and shape data — writing queries, joining across tables, and structuring data so it's reliable to analyse.",
-    skills: ["SQL", "PostgreSQL", "MySQL", "Query Optimisation", "Data Warehousing"],
+      "Writing efficient SQL queries, managing relational databases, and preparing data for analysis.",
+    skills: [
+      "MySQL",
+      "SQL",
+      "Database Design",
+      "Data Modeling",
+    ],
   },
   {
     name: "Business Intelligence",
     icon: "bi",
     description:
-      "How I make findings usable — building dashboards and reports that stakeholders can read at a glance and act on.",
-    skills: ["Power BI", "Tableau", "DAX", "Looker Studio", "Dashboard Design"],
+      "Creating dashboards and reports that transform raw data into actionable business insights.",
+    skills: [
+      "Power BI",
+      "Dashboard Design",
+      "Data Visualization",
+      "Microsoft Excel",
+    ],
   },
   {
     name: "Automation",
     icon: "automation",
     description:
-      "How I remove repetitive work — turning manual, monthly processes into repeatable pipelines that run themselves.",
-    skills: ["ETL Pipelines", "Python Scripting", "Excel Macros", "Scheduled Reports"],
+      "Developing intelligent automation workflows that reduce manual effort and improve operational efficiency.",
+    skills: [
+      "n8n",
+      "Selenium",
+      "Playwright",
+      "FastAPI",
+      "Workflow Automation",
+    ],
   },
   {
     name: "Tools",
     icon: "tools",
     description:
-      "The everyday environment I work in to version, collaborate, and ship analysis.",
-    skills: ["Git", "GitHub", "Jupyter", "VS Code", "Google Sheets"],
+      "Daily development tools used for coding, version control, collaboration, and analytics.",
+    skills: [
+      "Git",
+      "GitHub",
+      "VS Code",
+      "Jupyter Notebook",
+      "Postman",
+    ],
   },
   {
     name: "Finance Knowledge",
     icon: "finance",
     description:
-      "The domain lens I bring to numbers — reading data in the context of real financial and business questions.",
+      "Understanding financial concepts and business metrics to support data-driven decision making.",
     skills: [
-      "Financial Analysis",
-      "Budgeting & Forecasting",
-      "Valuation Basics",
-      "Risk Metrics",
-      "Market Data",
+      "Financial Markets",
+      "Business Analytics",
+      "Investment Basics",
+      "Financial Data Analysis",
     ],
   },
   {
     name: "Soft Skills",
     icon: "soft",
     description:
-      "How I make analysis land — communicating clearly, collaborating with stakeholders, and framing insight for the audience.",
+      "Strong analytical thinking with the ability to communicate insights and solve real-world business problems.",
     skills: [
-      "Data Storytelling",
-      "Stakeholder Communication",
       "Problem Solving",
-      "Attention to Detail",
-      "Collaboration",
+      "Analytical Thinking",
+      "Communication",
+      "Team Collaboration",
+      "Time Management",
     ],
   },
 ];

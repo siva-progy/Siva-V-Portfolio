@@ -173,29 +173,42 @@ export function CaseStudy({
             </Reveal>
 
             {/* Links */}
-            {(project.links.github || project.links.live) && (
-              <Reveal>
-                <div className="flex flex-wrap gap-4 pt-2">
-                  {project.links.live && (
-                    <Button href={project.links.live} external size="md">
-                      Live demo
-                      <ArrowUpRight size={17} aria-hidden="true" />
-                    </Button>
-                  )}
-                  {project.links.github && (
-                    <Button
-                      href={project.links.github}
-                      external
-                      variant="secondary"
-                      size="md"
-                    >
-                      <Github size={17} aria-hidden="true" />
-                      GitHub
-                    </Button>
-                  )}
-                </div>
-              </Reveal>
-            )}
+            {/* Links */}
+{(project.links.github || project.links.live || project.links.video) && (
+  <Reveal>
+    <div className="flex flex-wrap gap-4 pt-2">
+      {project.links.live && (
+        <Button href={project.links.live} external size="md">
+          Live Demo
+          <ArrowUpRight size={17} aria-hidden="true" />
+        </Button>
+      )}
+
+      {project.links.video && (
+        <Button
+          href={project.links.video}
+          external
+          variant="secondary"
+          size="md"
+        >
+          ▶ Watch Demo
+        </Button>
+      )}
+
+      {project.links.github && (
+        <Button
+          href={project.links.github}
+          external
+          variant="secondary"
+          size="md"
+        >
+          <Github size={17} aria-hidden="true" />
+          GitHub
+        </Button>
+      )}
+    </div>
+  </Reveal>
+)}
           </div>
         </div>
       </div>

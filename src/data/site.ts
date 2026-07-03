@@ -1,23 +1,28 @@
 import type { SiteConfig } from "@/types";
 
-/**
- * Site-wide config for SEO/metadata. Update `url` to the final Netlify
- * domain before deploy. All other content data lives in sibling files.
- */
 export const siteConfig: SiteConfig = {
-  // TODO: replace with final Netlify domain
-  url: "https://siva-portfolio.netlify.app",
-  title: "Siva Suburamaniyam V",
+  url: "https://siva-v-portfolio.netlify.app",
+
+  title: "Siva Suburamaniyam V | Data Analyst Portfolio",
+
   description:
-    "Data Analyst and Finance Enthusiast. Turning data into clear, decision-ready insight.",
+    "Portfolio of Siva Suburamaniyam V, a Data Analyst specializing in Python, SQL, Power BI, Automation, and Business Intelligence. Passionate about transforming data into actionable business insights.",
+
   ogImage: "/images/og.png",
+
   keywords: [
     "Siva Suburamaniyam",
     "Data Analyst",
-    "Finance",
-    "Data Analysis Portfolio",
-    "SQL",
+    "Business Analyst",
     "Python",
+    "SQL",
     "Power BI",
+    "Excel",
+    "Business Intelligence",
+    "Data Visualization",
+    "Automation",
+    "n8n",
+    "Stock Market Analysis",
+    "Market Research",
   ],
 };

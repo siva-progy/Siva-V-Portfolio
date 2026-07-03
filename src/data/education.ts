@@ -1,56 +1,49 @@
 import type { EducationItem } from "@/types";
 
-/**
- * =========================================================================
- * EDUCATION CONTENT — edit this file to update the Education section.
- * All values are [PLACEHOLDER] for Siva Suburamaniyam V. Optional fields
- * (score, coursework, achievements, certificationsDuringStudy,
- * finalYearProject) only render when present, so trim freely.
- *
- * Order newest-first; the section renders them top-to-bottom on the rail.
- * =========================================================================
- */
-
 export const education: EducationItem[] = [
   {
-    degree: "Your Degree — Field of Study",
-    institution: "Your University",
-    college: "Your College Name",
-    period: "20XX — 20XX",
-    location: "City, India",
-    score: "CGPA X.X / 10",
+    degree: "Bachelor of Science (B.Sc.) – Information Systems Management",
+    institution: "Bharathiar University",
+    college: "Sri Krishna Arts and Science College (Autonomous)",
+    period: "2023 – 2026",
+    location: "Coimbatore, Tamil Nadu, India",
+
     coursework: [
-      "Statistics",
-      "Data Structures",
-      "Database Systems",
-      "Financial Management",
+      "Data Analytics",
+      "Business Intelligence",
+      "Database Management Systems",
+      "Python Programming",
+      "SQL",
+      "Software Engineering",
       "Business Analytics",
-      "Econometrics",
+      "Management Information Systems",
     ],
+
     achievements: [
-      "[PLACEHOLDER] Ranked in the top X% of the cohort.",
-      "[PLACEHOLDER] Led a student analytics/finance club or event.",
-      "[PLACEHOLDER] Won or placed in a relevant competition.",
+      "Successfully completed multiple academic projects in Data Analytics and Automation.",
+      "Developed an end-to-end automation solution as the final year project.",
+      "Built practical experience using Python, SQL, Power BI, n8n, Selenium, and FastAPI.",
     ],
+
     certificationsDuringStudy: [
-      "[PLACEHOLDER] Google Data Analytics",
-      "[PLACEHOLDER] SQL certification",
+      "IBM - Introduction to Data Science",
+      "Coursera Professional Certifications",
     ],
+
     finalYearProject: {
-      title: "[PLACEHOLDER] Final-Year Project Title",
+      title: "Automated Order Processing System for Zepto using n8n",
       summary:
-        "[PLACEHOLDER] A capstone project that applied data analysis to a real finance/business question — describe the problem, what you built, and the result in one or two sentences.",
-      stack: ["Python", "SQL", "Power BI"],
-      outcome: "[PLACEHOLDER] Graded A · Recognised as a standout project",
-      link: "https://github.com/",
+        "Designed and developed an intelligent automation system capable of searching, identifying, and adding products to the Zepto cart automatically using Python, Selenium, FastAPI, and n8n. The project focused on reducing manual effort while maintaining high product selection accuracy.",
+      stack: [
+        "Python",
+        "n8n",
+        "Selenium",
+        "FastAPI",
+        "Playwright",
+      ],
+      outcome:
+        "Successfully demonstrated as a production-ready final year automation project.",
+      link: "https://github.com/siva-progy",
     },
-  },
-  {
-    degree: "Higher Secondary / Pre-University",
-    institution: "Your School / Junior College",
-    period: "20XX — 20XX",
-    location: "City, India",
-    score: "XX%",
-    coursework: ["Mathematics", "Commerce / Science", "Economics"],
   },
 ];
