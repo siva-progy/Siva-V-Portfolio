@@ -65,7 +65,7 @@ export function Hero() {
       ref={ref}
       id="hero"
       aria-label="Introduction"
-      className="relative flex min-h-svh items-center overflow-hidden"
+      className="relative flex min-h-svh items-center overflow-hidden pt-24"
     >
       {/* Ambient depth layers (decorative, mouse-parallax, aria-hidden) */}
       <BackgroundLayers />
@@ -100,7 +100,7 @@ export function Hero() {
             {/* Name — editorial display type */}
             <motion.h1
               variants={item}
-              className="mt-5 text-[clamp(3.8rem,9vw,6.8rem)] font-semibold leading-[1.05] tracking-[-0.02em] text-text text-balance"
+              className="mt-5 max-w-[12ch] text-6xl md:text-7xl lg:text-8xl font-semibold leading-[1.05] tracking-[-0.02em] text-text"
             >
               {profile.name}
             </motion.h1>

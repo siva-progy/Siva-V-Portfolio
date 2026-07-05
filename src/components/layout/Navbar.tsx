@@ -46,7 +46,7 @@ export function Navbar() {
           "fixed inset-x-0 top-0 z-50 transition-all duration-300",
         )}
       >
-        <div className="mx-auto flex h-16 max-w-[1280px] items-center justify-between px-[clamp(1.25rem,5vw,4rem)]">
+        <div className="mx-auto flex h-16 max-w-[1440px] items-center justify-between px-8 xl:px-12">
           <div
             className={cn(
               "absolute inset-0 -z-10 transition-all duration-300",
@@ -73,7 +73,7 @@ export function Navbar() {
           {/* Desktop nav */}
           <nav
             aria-label="Primary"
-            className="hidden items-center gap-1 lg:flex"
+            className="hidden items-center gap-3 xl:gap-5 lg:flex"
           >
             {navItems.map((item) => {
               const id = item.href.replace("#", "");
@@ -84,10 +84,10 @@ export function Navbar() {
                   href={item.href}
                   aria-current={isActive ? "true" : undefined}
                   className={cn(
-                    "relative rounded-md px-3.5 py-2 text-caption font-medium transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent",
-                    isActive
-                      ? "text-text"
-                      : "text-muted hover:text-text",
+                   "relative rounded-md px-2.5 xl:px-3 py-2 text-caption font-medium transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent",
+                      isActive
+                        ? "text-text"
+                        : "text-muted hover:text-text",
                   )}
                 >
                   {isActive && (
