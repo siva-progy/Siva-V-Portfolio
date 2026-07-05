@@ -110,7 +110,7 @@ export function Footer() {
                 className="inline-flex items-center gap-2 self-start rounded-md border border-border bg-surface px-5 py-2.5 text-caption font-medium text-text surface-raise transition-colors hover:bg-surface-2"
               >
                 <Download size={15} aria-hidden="true" />
-                Download résumé
+                Download Resume
               </a>
             </div>
           </Reveal>
