@@ -18,6 +18,7 @@ export const certifications: Certification[] = [
     category: "Data Science",
     issued: "2026",
     credentialId: "DS_2031024",
+    certificateUrl: "/certificates/ds-with-ml.pdf",
   },
 
   {
@@ -51,9 +52,8 @@ export const certifications: Certification[] = [
     category: "Business Intelligence",
     issued: "2025",
     credentialId: "AMY-251009095707352",
+    certificateUrl: "/certificates/power-bi.pdf",
   },
-  
-  
 ];
 
 /** Ordered category list for filter chips, derived from the data. */

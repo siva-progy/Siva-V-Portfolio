@@ -60,22 +60,25 @@ export function CertificateCard({ cert }: { cert: Certification }) {
       </dl>
 
       {/* Verify action */}
-      {cert.verifyUrl && (
-        <a
-          href={cert.verifyUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-6 inline-flex items-center gap-2 self-start rounded-md border border-border bg-surface px-4 py-2 text-caption font-medium text-text transition-colors hover:border-accent/50 hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
-        >
-          <ShieldCheck size={15} aria-hidden="true" />
-          Verify credential
-          <ArrowUpRight
-            size={14}
-            aria-hidden="true"
-            className="opacity-60 transition-transform group-hover:translate-x-0.5"
-          />
-        </a>
-      )}
+      {/* Certificate / Verify action */}
+{(cert.verifyUrl || cert.certificateUrl) && (
+  <a
+    href={cert.verifyUrl || cert.certificateUrl}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="mt-6 inline-flex items-center gap-2 self-start rounded-md border border-border bg-surface px-4 py-2 text-caption font-medium text-text transition-colors hover:border-accent/50 hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+  >
+    <ShieldCheck size={15} aria-hidden="true" />
+
+    {cert.verifyUrl ? "Verify Credential" : "View Certificate"}
+
+    <ArrowUpRight
+      size={14}
+      aria-hidden="true"
+      className="opacity-60 transition-transform group-hover:translate-x-0.5"
+    />
+  </a>
+)}
     </motion.article>
   );
 }

@@ -201,22 +201,19 @@ export type CertCategory =
   | "Data Science with Machine Learning"
   | "Business Intelligence"
   | "Data Science";
-
 export interface Certification {
   title: string;
   provider: string;
-  /** Category badge / filter key. */
   category: CertCategory;
-  /**
-   * Public path to provider logo, e.g. "/icons/providers/x.svg".
-   * Optional — a lettermark fallback renders when absent.
-   */
   logo?: string;
-  /** Display string, e.g. "Mar 2025" */
   issued: string;
-  /** Optional credential ID for verification. */
   credentialId?: string;
+
+  // Official verification link
   verifyUrl?: string;
+
+  // Local PDF/Image path
+  certificateUrl?: string;
 }
 
 /* ------------------------------------------------------------------ */
