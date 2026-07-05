@@ -118,7 +118,7 @@ export function Navbar() {
               className="hidden h-10 rounded-md bg-accent px-4 text-caption font-semibold text-[#04121b] transition-colors hover:bg-accent-hover lg:inline-flex"
             >
               <Download size={15} aria-hidden="true" />
-              Résumé
+              Resume
             </MagneticButton>
 
             {/* Mobile trigger */}
