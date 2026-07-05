@@ -3,10 +3,10 @@ import type { Profile, SocialLink } from "@/types";
 export const profile: Profile = {
   name: "Siva Suburamaniyam V",
 
-  role: "Data Analyst",
+  role: "DATA ANALYST • BUSINESS INTELLIGENCE",
 
-  tagline:
-    "Transforming raw data into meaningful insights that drive smarter business decisions.",
+    tagline:
+      "Helping businesses make smarter decisions through data analytics, business intelligence, and automation.",
 
   summary:
     "I'm a Data Analyst passionate about solving business problems using data. My expertise includes Excel, SQL, Python, Power BI, and automation tools like n8n and Playwright. I enjoy transforming complex datasets into actionable insights, building interactive dashboards, and creating intelligent automation solutions that improve efficiency and decision-making.",
@@ -17,9 +17,8 @@ export const profile: Profile = {
 
   resumeUrl: "/resume/Updated_Resume.pdf",
 
-  availability: "Open to Data Analyst & Business Analyst Opportunities",
+  availability: "Open to Data Analyst Opportunities",
 };
-
 export const socials: SocialLink[] = [
   {
     label: "GitHub",

@@ -46,21 +46,21 @@ export function Section({
     <section
       id={id}
       className={cn(
-        "scroll-mt-24 py-[clamp(6rem,12vh,10rem)]",
-        className,
-      )}
+      "scroll-mt-24 py-[clamp(7rem,14vh,11rem)]",
+      className,
+    )}
       aria-labelledby={title ? `${id}-heading` : undefined}
     >
       <Container width={width}>
         {hasHeader && (
           <header
             className={cn(
-              "mb-[clamp(3rem,6vh,5rem)] flex flex-col gap-4",
+              "mb-[clamp(4rem,7vh,6rem)] flex flex-col gap-5",
               centered && "items-center text-center",
             )}
           >
             {(index || eyebrow) && (
-              <div className="flex items-center gap-3 font-mono text-xs uppercase tracking-[0.1em] text-subtle">
+              <div className="flex items-center gap-3 font-mono text-sm font-semibold uppercase tracking-[0.18em] text-accent">
                 {index && <span className="text-accent">{index}</span>}
                 {eyebrow && <span>{eyebrow}</span>}
               </div>
@@ -68,13 +68,12 @@ export function Section({
             {title && (
               <h2
                 id={`${id}-heading`}
-                className="max-w-[20ch] text-h1 font-semibold leading-[1.1] tracking-tight text-text"
-              >
+                className="max-w-[18ch] text-[clamp(2.8rem,5vw,4.8rem)] font-semibold leading-[1.05] tracking-tight text-text">
                 {title}
               </h2>
             )}
             {lead && (
-              <p className="max-w-[55ch] text-body-lg leading-relaxed text-muted">
+              <p className="max-w-[62ch] text-lg leading-8 text-muted">
                 {lead}
               </p>
             )}

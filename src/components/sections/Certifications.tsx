@@ -57,8 +57,8 @@ export function Certifications() {
       id="certifications"
       index="05"
       eyebrow="Certifications"
-      title="Verified, not just claimed."
-      lead="Credentials I've earned along the way — each links to its verification page."
+      title="Professional Certifications"
+      lead="Industry-recognized certifications showcasing my expertise in Data Analytics, Business Intelligence, SQL, Python, and workflow automation."
       width="wide"
     >
       {/* Controls */}
@@ -74,7 +74,7 @@ export function Certifications() {
             type="search"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search certifications…"
+            placeholder="Search by certificate, provider, or category..."
             aria-label="Search certifications"
             className="h-11 w-full rounded-full border border-border bg-surface pl-11 pr-11 text-body text-text placeholder:text-subtle transition-colors focus-visible:border-accent/50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
           />
@@ -147,7 +147,7 @@ export function Certifications() {
         {/* Empty state */}
         {filtered.length === 0 && (
           <p className="py-12 text-center text-body text-subtle">
-            No certifications match your search.
+            No certifications found for the selected filter.
           </p>
         )}
       </div>

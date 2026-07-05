@@ -44,8 +44,8 @@ export function About() {
       id="about"
       index="01"
       eyebrow="About"
-      title="Data with a point of view."
-      lead="A short introduction to how I work and where I'm headed."
+      title="About Me."
+      lead="Passionate about transforming data into meaningful insights through analytics, visualization, and automation."
       width="content"
     >
       <div ref={ref} className="flex flex-col gap-[clamp(3rem,6vh,5rem)]">
@@ -88,7 +88,7 @@ export function About() {
         {/* Core strengths */}
         <div>
           <h3 className="mb-6 font-mono text-caption uppercase tracking-[0.14em] text-subtle">
-            Core strengths
+            Technical Expertise
           </h3>
           <Stagger className="grid gap-4 sm:grid-cols-2">
             {coreStrengths.map((s) => (

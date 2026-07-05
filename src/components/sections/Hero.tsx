@@ -92,7 +92,7 @@ export function Hero() {
             {/* Role eyebrow */}
             <motion.p
               variants={item}
-              className="mt-8 font-mono text-caption uppercase tracking-[0.18em] text-accent"
+              className="mt-8 font-mono text-sm uppercase tracking-[0.22em] font-semibold text-accent"
             >
               {profile.role}
             </motion.p>
@@ -100,7 +100,7 @@ export function Hero() {
             {/* Name — editorial display type */}
             <motion.h1
               variants={item}
-              className="mt-5 text-display font-semibold leading-[1.05] tracking-[-0.02em] text-text text-balance"
+              className="mt-5 text-[clamp(3.8rem,9vw,6.8rem)] font-semibold leading-[1.05] tracking-[-0.02em] text-text text-balance"
             >
               {profile.name}
             </motion.h1>

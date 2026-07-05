@@ -68,9 +68,6 @@ export function Navbar() {
             >
             
             </motion.span>
-            <span className="hidden text-body font-semibold tracking-tight text-text sm:inline">
-              {profile.name.split(" ")[0]}
-            </span>
           </a>
 
           {/* Desktop nav */}
@@ -111,16 +108,7 @@ export function Navbar() {
             <div className="hidden sm:block">
               <ThemeToggle />
             </div>
-            <MagneticButton
-              href={profile.resumeUrl}
-              external
-              strength={8}
-              className="hidden h-10 rounded-md bg-accent px-4 text-caption font-semibold text-[#04121b] transition-colors hover:bg-accent-hover lg:inline-flex"
-            >
-              <Download size={15} aria-hidden="true" />
-              Resume
-            </MagneticButton>
-
+            
             {/* Mobile trigger */}
             <button
               type="button"

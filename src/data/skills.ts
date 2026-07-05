@@ -4,7 +4,7 @@ export const skillCategories: SkillCategory[] = [
     name: "Data Analytics",
     icon: "analytics",
     description:
-      "Cleaning, transforming, and analyzing data to uncover meaningful insights that support business decision-making.",
+      "Analyzing, cleaning, and transforming data to generate actionable insights that support business decision-making.",
     skills: [
       "Microsoft Excel",
       "SQL",
@@ -12,18 +12,19 @@ export const skillCategories: SkillCategory[] = [
       "Data Cleaning",
       "Data Analysis",
       "Statistics",
+      "Data Interpretation"
     ],
   },
   {
-    name: "Programming",
+    name: "Programming & Development",
     icon: "code",
     description:
-      "Building analytical and automation solutions using modern programming languages and frameworks.",
+      "Developing analytical applications, automation solutions, and APIs using modern programming technologies.",
+      
     skills: [
       "Python",
-      "JavaScript",
-      "HTML",
-      "CSS",
+      "REST APIs",
+      "JSON",
       "FastAPI",
     ],
   },
@@ -35,8 +36,8 @@ export const skillCategories: SkillCategory[] = [
     skills: [
       "MySQL",
       "SQL",
-      "Database Design",
-      "Data Modeling",
+      "Database Management",
+      "Query Optimization",
     ],
   },
   {

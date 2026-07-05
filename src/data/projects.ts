@@ -3,28 +3,29 @@ export const projects: Project[] = [
   {
     slug: "zepto-order-automation",
 
-    title: "Automated Order Processing System for Zepto using n8n",
+    title: 
+      "Intelligent Grocery Order Automation Platform",
 
     summary:
-      "An intelligent automation system that searches products on Zepto, identifies the exact product, and automatically adds it to the cart using n8n, Python, Selenium, and FastAPI.",
+      "Developed an intelligent workflow automation system that searches, validates, and processes grocery orders on Zepto using n8n, Python, Selenium, and FastAPI, significantly reducing manual effort and improving ordering accuracy.",
 
     overview:
-      "This project was developed to automate the online grocery ordering process on Zepto. The system receives a product request, launches an automated browser session, searches for the requested product, identifies the correct item among multiple similar products, and adds it to the cart without manual intervention. The workflow is orchestrated using n8n with Python automation running through FastAPI.",
+      "Designed and developed an end-to-end workflow automation platform that automates grocery ordering on Zepto. The system receives product requests, launches a browser session, identifies the correct product from multiple search results, adds it to the cart, and returns the execution status through an automated workflow orchestrated with n8n and FastAPI.",
 
     problem:
-      "Online grocery ordering involves repetitive manual searching and selecting products. Similar product names often cause incorrect selections, making automation difficult. The objective was to create a reliable workflow capable of accurately identifying and selecting the intended product.",
-
+      "Manual online grocery ordering is repetitive and prone to human error, especially when multiple products have similar names. The objective was to automate product selection while maintaining high accuracy and minimizing execution time.",
+    
     research:
       "Different automation approaches were evaluated using Selenium, Playwright, and browser debugging techniques. Product matching strategies were tested to improve selection accuracy when multiple similar products appeared in search results.",
 
     solution:
-      "A complete automation pipeline was developed where n8n triggers a FastAPI endpoint. Python Selenium controls the browser, searches for products, compares available search results, identifies the correct product using matching logic, adds it to the cart, captures execution logs, and returns the final status to n8n.",
+      "Built an automation pipeline where n8n orchestrates the workflow, FastAPI exposes REST endpoints, and Python Selenium performs browser automation. The system validates search results, selects the correct product using custom matching logic, updates the shopping cart, captures execution logs, and returns automation status in real time.",
 
     challenges:
       "The biggest challenge was handling multiple similar search results on Zepto. Dynamic page elements, changing selectors, loading delays, and browser synchronization required robust element detection, retry mechanisms, and fallback strategies.",
 
     learnings:
-      "This project strengthened my skills in workflow automation, Python programming, Selenium browser automation, REST APIs, FastAPI development, debugging complex automation workflows, and integrating multiple technologies into a production-ready solution.",
+      "Strengthened practical skills in workflow automation, REST API integration, browser automation, debugging, automation reliability, and full-stack system integration while building a production-ready solution.",
 
     stack: [
       "Python",
@@ -39,19 +40,19 @@ export const projects: Project[] = [
     metrics: [
       {
         value: "96%",
-        label: "Reduction in manual ordering time"
+        label: "Reduction in manual effort"
       },
       {
         value: "<30 sec",
-        label: "Average automation execution"
+        label: "Average order completion"
       },
       {
         value: "100%",
-        label: "Exact product identification target"
+        label: "Target product accuracy"
       }
     ],
 
-    role: "Final Year Project",
+    role: "Developer & Automation Engineer",
 
     timeline: "2026",
 

@@ -1,12 +1,12 @@
 export const contactContent = {
-  heading: "Let's Connect.",
+  heading: "Let's Work Together",
 
   message:
-    "Thank you for visiting my portfolio. I'm actively seeking opportunities as a Data Analyst where I can apply my analytical, automation, and problem-solving skills to deliver meaningful business impact. Whether you have a job opportunity, project collaboration, or simply want to connect, I'd be happy to hear from you.",
+  "I'm currently seeking Data Analyst opportunities where I can apply my skills in SQL, Python, Power BI, Business Intelligence, and workflow automation to solve real business problems. If you have an opportunity, project, or collaboration in mind, I'd be delighted to connect with you.",
 
-  availability: "Open to Full-Time Data Analyst Opportunities",
+  availability: "Available for Full-Time Data Analyst Roles",
 
-  currentRole: "B.Sc. Information Systems Management Graduate · Data Analyst Aspirant",
+  currentRole: "B.Sc. Information Systems Management Graduate | Data Analyst",
 
   formName: "contact",
 };

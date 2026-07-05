@@ -29,17 +29,17 @@ export const coreStrengths = [
       "Cleaning, transforming, and analyzing structured data to uncover valuable business insights.",
   },
   {
-    title: "Dashboard Development",
+    title: "Business Intelligence",
     detail:
       "Creating interactive Power BI dashboards that communicate KPIs and business performance clearly.",
   },
   {
-    title: "Automation",
+    title: "Workflow Automation",
     detail:
       "Building workflow automation using Python, n8n, Playwright, Selenium, and FastAPI.",
   },
   {
-    title: "Problem Solving",
+    title: "Analytical Thinking",
     detail:
       "Applying analytical thinking to solve business challenges with practical, scalable solutions.",
   },

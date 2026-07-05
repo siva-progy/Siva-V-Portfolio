@@ -21,9 +21,9 @@ export function Projects() {
     <Section
       id="projects"
       index="02"
-      eyebrow="Selected work"
-      title="Case studies, not screenshots."
-      lead="A closer look at how I approach a problem — from the messy data at the start to the decision it supported at the end."
+      eyebrow="Projects"
+      title="Featured Projects"
+      lead="A collection of projects that demonstrate my skills in data analytics, automation, business intelligence, and software development."
       width="wide"
     >
       {/* Featured case studies, divided for editorial rhythm */}
