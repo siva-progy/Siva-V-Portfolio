@@ -13,51 +13,47 @@ import type { Certification, CertCategory } from "@/types";
 
 export const certifications: Certification[] = [
   {
+    title: "Data Science with Machine Learning",
+    provider: "LMES / UPTOR",
+    category: "Data Science",
+    issued: "2026",
+    credentialId: "DS_2031024",
+  },
+
+  {
     title: "Google Data Analytics Professional Certificate",
-    provider: "Google",
+    provider: "Coursera / Google",
     category: "Data Analytics",
-    issued: "2025",
-    credentialId: "ABCD-1234-EFGH",
-    verifyUrl: "https://www.coursera.org/",
+    issued: "2024",
+    credentialId: "TOSYKRGLDKON",
+    verifyUrl: "https://coursera.org/verify/professional-cert/TOSYKRGLDKON",
     // logo: "/icons/providers/google.svg",
   },
   {
-    title: "Python for Data Science",
-    provider: "DataCamp",
-    category: "Programming",
-    issued: "2025",
-    credentialId: "PY-5678",
-    verifyUrl: "https://www.datacamp.com/",
-  },
-  {
-    title: "SQL for Data Analysis",
-    provider: "Mode / Coursera",
-    category: "SQL",
+    title: "IBM Data Science Professional Certificate",
+    provider: "Coursera / IBM",
+    category: "Data Science",
     issued: "2024",
-    verifyUrl: "https://www.coursera.org/",
+    credentialId: "203ZAEVYX680",
+    verifyUrl: "https://coursera.org/verify/professional-cert/203ZAEVYX680",
   },
   {
-    title: "Data Visualization with Power BI",
-    provider: "Microsoft",
+    title: "IBM Introduction to Data Science Professional Certificate",
+    provider: "Coursera / IBM",
+    category: "Data Science",
+    issued: "2024",
+    credentialId: "Q1ZAXVTXO4SN",
+    verifyUrl: "https://coursera.org/verify/professional-cert/Q1ZAXVTXO4SN",
+  },
+  {
+    title: "Data Visualization with Power BI (Value Added Course)",
+    provider: "Amypo Technologies Pvt Ltd",
     category: "Business Intelligence",
     issued: "2025",
-    credentialId: "PBI-9012",
-    verifyUrl: "https://learn.microsoft.com/",
+    credentialId: "AMY-251009095707352",
   },
-  {
-    title: "Financial Markets",
-    provider: "Yale (Coursera)",
-    category: "Finance",
-    issued: "2024",
-    verifyUrl: "https://www.coursera.org/",
-  },
-  {
-    title: "Machine Learning Foundations",
-    provider: "Coursera",
-    category: "AI / ML",
-    issued: "2025",
-    verifyUrl: "https://www.coursera.org/",
-  },
+  
+  
 ];
 
 /** Ordered category list for filter chips, derived from the data. */

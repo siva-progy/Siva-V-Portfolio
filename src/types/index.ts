@@ -197,11 +197,10 @@ export interface EducationItem {
 /** Category badge for a certification — used by the filter chips. */
 export type CertCategory =
   | "Data Analytics"
-  | "Programming"
   | "SQL"
-  | "AI / ML"
+  | "Data Science with Machine Learning"
   | "Business Intelligence"
-  | "Finance";
+  | "Data Science";
 
 export interface Certification {
   title: string;
