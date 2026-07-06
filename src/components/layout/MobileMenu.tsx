@@ -143,7 +143,7 @@ export function MobileMenu({ open, onClose, items, active }: MobileMenuProps) {
                 className="inline-flex h-12 items-center justify-center gap-2 rounded-md bg-accent px-6 font-semibold text-[#04121b] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
               >
                 <Download size={18} aria-hidden="true" />
-                Download résumé
+                Download Resume
               </a>
               <SocialLinks links={socials} />
             </motion.div>

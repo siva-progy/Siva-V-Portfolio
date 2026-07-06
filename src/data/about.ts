@@ -13,13 +13,13 @@ export const aboutStory: string[] = [
 export const currentStatus = {
   label: "Current Status",
   value:
-  "To build a career as a Data Analyst by helping organizations make data-driven decisions through analytics, visualization, and business intelligence while continuously improving my technical and analytical skills.",
+    "Actively building real-world Data Analytics projects while seeking full-time opportunities as a Data Analyst.",
 };
 
 export const careerGoal = {
   label: "Career Goal",
   value:
-    "To build a successful career as a Data Analyst, helping organizations make data-driven decisions through analytics, automation, and visualization.",
+    "To leverage data analytics, business intelligence, and automation to help organizations make informed, data-driven decisions while continuously expanding my technical expertise.",
 };
 
 export const coreStrengths = [

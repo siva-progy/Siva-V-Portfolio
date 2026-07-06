@@ -106,7 +106,7 @@ export function Contact() {
               className="h-12 self-start rounded-md bg-surface px-6 font-semibold text-text surface-raise transition-colors hover:bg-surface-2"
             >
               <Download size={18} aria-hidden="true" />
-              Download résumé
+              Download Resume
             </MagneticButton>
           </Reveal>
         </motion.div>

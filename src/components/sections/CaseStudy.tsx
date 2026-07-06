@@ -34,14 +34,13 @@ export function CaseStudy({
   });
   const coverY = useTransform(scrollYProgress, [0, 1], [40, -40]);
 
-  const narrative: { label: string; body?: string }[] = [
-    { label: "Overview", body: project.overview },
-    { label: "Problem", body: project.problem },
-    { label: "Research & analysis", body: project.research },
-    { label: "Solution", body: project.solution },
-    { label: "Challenges", body: project.challenges },
-    { label: "Key learnings", body: project.learnings },
-  ];
+const narrative: { label: string; body?: string }[] = [
+  { label: "Project Overview", body: project.overview },
+  { label: "Business Problem", body: project.problem },
+  { label: "Solution Architecture", body: project.solution },
+  { label: "Key Features", body: project.challenges },
+  { label: "Project Outcome", body: project.learnings },
+];
 
   return (
     <article ref={ref} className="py-[clamp(3rem,7vh,6rem)]">
@@ -95,7 +94,7 @@ export function CaseStudy({
         <div className="flex flex-col">
           <Reveal>
             <span className="font-mono text-caption uppercase tracking-[0.14em] text-accent">
-              {String(index + 1).padStart(2, "0")} — Case study
+              {String(index + 1).padStart(2, "0")} — Featured Project
             </span>
             <h3 className="mt-4 text-h2 font-semibold leading-[1.1] tracking-tight text-text">
               {project.title}
@@ -138,7 +137,7 @@ export function CaseStudy({
             {project.metrics && project.metrics.length > 0 && (
               <Reveal>
                 <h4 className="mb-4 font-mono text-caption uppercase tracking-[0.12em] text-subtle">
-                  Results & impact
+                  Project Highlights
                 </h4>
                 <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
                   {project.metrics.map((m) => (
@@ -158,10 +157,10 @@ export function CaseStudy({
               </Reveal>
             )}
 
-            {/* Tech stack */}
+            {/* Technologies Used */}
             <Reveal>
               <h4 className="mb-3 font-mono text-caption uppercase tracking-[0.12em] text-subtle">
-                Tech stack
+                Technologies Used
               </h4>
               <ul className="flex flex-wrap gap-2">
                 {project.stack.map((t) => (

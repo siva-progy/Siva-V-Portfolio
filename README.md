@@ -42,7 +42,7 @@ These are assets and values only you can provide. The site runs without them
 2. **Your real content** — edit files in `src/data` (see §5). Every value
    marked `[PLACEHOLDER]` is safe to replace.
 
-3. **Résumé PDF**
+3. **Resume PDF**
    ```
    public/resume/siva-suburamaniyam-resume.pdf
    ```

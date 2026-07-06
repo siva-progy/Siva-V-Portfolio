@@ -44,11 +44,11 @@ export function About() {
       id="about"
       index="01"
       eyebrow="About"
-      title="About Me."
+      title="Professional Summary"
       lead="Passionate about transforming data into meaningful insights through analytics, visualization, and automation."
       width="content"
     >
-      <div ref={ref} className="flex flex-col gap-[clamp(3rem,6vh,5rem)]">
+      <div ref={ref} className="flex flex-col gap-[clamp(4rem,7vh,6rem)]">
         {/* Story + status/goal panel */}
         <div className="grid gap-10 lg:grid-cols-[1.4fr_1fr] lg:gap-16">
           {/* Professional story */}
@@ -88,14 +88,14 @@ export function About() {
         {/* Core strengths */}
         <div>
           <h3 className="mb-6 font-mono text-caption uppercase tracking-[0.14em] text-subtle">
-            Technical Expertise
+            Core Competencies
           </h3>
           <Stagger className="grid gap-4 sm:grid-cols-2">
             {coreStrengths.map((s) => (
               <StaggerItem key={s.title}>
                 <Card
                   interactive
-                  className="h-full p-6"
+                  className="h-full p-7"
                   aria-label={s.title}
                 >
                   <p className="text-h3 font-semibold text-text">{s.title}</p>
@@ -108,38 +108,7 @@ export function About() {
           </Stagger>
         </div>
 
-        {/* Education snapshot */}
-        <Reveal>
-          <Card className="flex flex-col gap-4 p-7 sm:flex-row sm:items-center sm:gap-6">
-            <span
-              className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-accent-muted text-accent"
-              aria-hidden="true"
-            >
-              <GraduationCap size={22} />
-            </span>
-            <div className="flex flex-col gap-1">
-              <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-                <p className="text-h3 font-semibold text-text">
-                  {educationSnapshot.degree}
-                </p>
-                <span className="font-mono text-caption text-subtle">
-                  {educationSnapshot.period}
-                </span>
-              </div>
-              <p className="text-body text-muted">
-                {educationSnapshot.institution}
-                {educationSnapshot.location
-                  ? ` · ${educationSnapshot.location}`
-                  : ""}
-              </p>
-              {educationSnapshot.detail && (
-                <p className="mt-1 text-caption text-subtle">
-                  {educationSnapshot.detail}
-                </p>
-              )}
-            </div>
-          </Card>
-        </Reveal>
+        
       </div>
     </Section>
   );

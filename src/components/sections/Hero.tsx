@@ -92,7 +92,7 @@ export function Hero() {
             {/* Role eyebrow */}
             <motion.p
               variants={item}
-              className="mt-8 font-mono text-sm uppercase tracking-[0.22em] font-semibold text-accent"
+              className="mt-8 text-base md:text-lg font-semibold uppercase tracking-[0.15em] text-accent"
             >
               {profile.role}
             </motion.p>
@@ -100,7 +100,7 @@ export function Hero() {
             {/* Name — editorial display type */}
             <motion.h1
               variants={item}
-              className="mt-5 max-w-[12ch] text-6xl md:text-7xl lg:text-8xl font-semibold leading-[1.05] tracking-[-0.02em] text-text"
+              className="mt-5 max-w-[13ch] text-5xl md:text-6xl lg:text-7xl font-semibold leading-[1.05] tracking-[-0.02em] text-text"
             >
               {profile.name}
             </motion.h1>
@@ -123,13 +123,11 @@ export function Hero() {
                 <ArrowUpRight size={18} aria-hidden="true" />
               </Button>
               <Button
-                href={profile.resumeUrl}
+                href="#contact"
                 variant="secondary"
                 size="lg"
-                external
               >
-                <Download size={18} aria-hidden="true" />
-                Resume
+                Let's Connect
               </Button>
             </motion.div>
 

@@ -23,8 +23,7 @@ export function Projects() {
       index="02"
       eyebrow="Projects"
       title="Featured Projects"
-      lead="A collection of projects that demonstrate my skills in data analytics, automation, business intelligence, and software development."
-      width="wide"
+      lead="Projects that showcase my ability to analyze data, automate workflows, and build practical solutions using Python, SQL, Power BI, and modern development tools."
     >
       {/* Featured case studies, divided for editorial rhythm */}
       <div className="flex flex-col">
