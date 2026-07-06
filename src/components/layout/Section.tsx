@@ -46,7 +46,7 @@ export function Section({
     <section
       id={id}
       className={cn(
-      "scroll-mt-24 py-[clamp(7rem,14vh,11rem)]",
+      "scroll-mt-24 py-[clamp(6rem,12vh,10rem)]",
       className,
     )}
       aria-labelledby={title ? `${id}-heading` : undefined}
@@ -55,7 +55,7 @@ export function Section({
         {hasHeader && (
           <header
             className={cn(
-              "mb-[clamp(4rem,7vh,6rem)] flex flex-col gap-5",
+              "mb-[clamp(2rem,4vh,3rem)] flex flex-col gap-2",
               centered && "items-center text-center",
             )}
           >

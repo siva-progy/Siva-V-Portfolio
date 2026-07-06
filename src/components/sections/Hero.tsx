@@ -73,7 +73,7 @@ export function Hero() {
       {/* Foreground with scroll-linked exit parallax */}
       <motion.div
         style={reduced ? undefined : { y: contentY, opacity: contentOpacity }}
-        className="relative z-10 w-full"
+        className="relative z-30 w-full"
       >
         <Container width="content">
           <motion.div
@@ -132,15 +132,19 @@ export function Hero() {
             </motion.div>
 
             {/* Social row */}
-            <motion.div variants={item} className="mt-12">
-              <SocialLinks links={socials} />
-            </motion.div>
+            
+          <motion.div
+            variants={item}
+            className="relative z-50 mt-12"
+          >
+            <SocialLinks links={socials} />
+          </motion.div>
           </motion.div>
         </Container>
       </motion.div>
 
       {/* Scroll cue, pinned to bottom-center */}
-      <div className="absolute inset-x-0 bottom-8 z-10 flex justify-center">
+      <div className="absolute inset-x-0 bottom-8 z-10 flex justify-center pointer-events-none">
         <ScrollIndicator />
       </div>
     </section>
