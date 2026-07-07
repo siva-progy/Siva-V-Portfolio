@@ -92,22 +92,9 @@ export function Contact() {
             </div>
 
             {/* Social links */}
-            <div className="flex flex-col gap-3">
-              <span className="font-mono text-caption uppercase tracking-[0.12em] text-subtle">
-                Elsewhere
-              </span>
-              <SocialLinks links={socials} />
-            </div>
+            
 
             {/* Magnetic resume button */}
-            <MagneticButton
-              href={profile.resumeUrl}
-              external
-              className="h-12 self-start rounded-md bg-surface px-6 font-semibold text-text surface-raise transition-colors hover:bg-surface-2"
-            >
-              <Download size={18} aria-hidden="true" />
-              Download Resume
-            </MagneticButton>
           </Reveal>
         </motion.div>
 

@@ -25,11 +25,6 @@ export const education: EducationItem[] = [
       "Built practical experience using Python, SQL, Power BI, n8n, Selenium, and FastAPI.",
     ],
 
-    certificationsDuringStudy: [
-      "IBM - Introduction to Data Science",
-      "Coursera Professional Certifications",
-    ],
-
     finalYearProject: {
       title: "Automated Order Processing System for Zepto using n8n",
       summary:

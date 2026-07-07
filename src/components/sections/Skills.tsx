@@ -33,14 +33,14 @@ export function Skills() {
     <Section
       id="skills"
       index="03"
-      eyebrow="Capabilities"
-      title="What I bring to the table."
-      lead="The toolkit behind the work — grouped by how I actually use it, not by a rating out of ten."
+      eyebrow="Technical Skills"
+      title="Core Technical Skills"
+      lead="Technologies and tools I use to analyze data, build dashboards, automate workflows, and solve business problems."
       width="wide"
     >
       <div ref={ref}>
         <motion.div style={reduced ? undefined : { y: gridY }}>
-          <Stagger className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          <Stagger className="grid gap-8 lg:grid-cols-2">
             {skillCategories.map((category) => (
               <StaggerItem key={category.name} className="h-full">
                 <SkillCard category={category} />
@@ -57,25 +57,25 @@ function SkillCard({ category }: { category: SkillCategory }) {
   const Icon = skillIconMap[category.icon];
 
   return (
-    <Card interactive variant="raised" className="flex h-full flex-col p-7">
+    <Card interactive variant="raised" className="flex h-full flex-col rounded-2xl p-8">
       {/* Icon + title */}
       <div className="flex items-center gap-4">
         <span
-          className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-accent-muted text-accent"
+          className="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-accent-muted text-accent"
           aria-hidden="true"
         >
-          <Icon size={22} />
+          <Icon size={28} />
         </span>
-        <h3 className="text-h3 font-semibold text-text">{category.name}</h3>
+        <h3 className="text-2xl font-bold text-text">{category.name}</h3>
       </div>
 
       {/* Professional-use description */}
-      <p className="mt-4 text-body leading-relaxed text-muted">
+      <p className="mt-5 text-[15px] leading-7 text-muted">
         {category.description}
       </p>
 
       {/* Skill chips */}
-      <ul className="mt-6 flex flex-wrap gap-2 pt-1">
+      <ul className="mt-8 flex flex-wrap gap-3">
         {category.skills.map((skill) => (
           <li key={skill}>
             <Chip>{skill}</Chip>
