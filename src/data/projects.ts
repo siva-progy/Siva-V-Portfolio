@@ -58,11 +58,11 @@ export const projects: Project[] = [
 
     status: "Completed",
 
-    image: "/images/projects/zepto-cover.png",
+    image: "/projects/zepto-cover.png",
 
     imageAlt: "Zepto Order Automation Dashboard",
 
-    architectureImage: "/images/projects/zepto-architecture.png",
+    architectureImage: "/projects/zepto-architecture.png",
 
     architectureAlt: "System Architecture Diagram",
 
