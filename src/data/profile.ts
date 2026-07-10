@@ -6,8 +6,7 @@ export const profile: Profile = {
   role: "DATA ANALYST • BUSINESS INTELLIGENCE",
 
     tagline:
-      "Helping businesses make smarter decisions through data analytics, business intelligence, and automation.",
-
+  "Aspiring Data Analyst passionate about transforming raw data into meaningful insights using SQL, Python, Power BI, and business intelligence.",
   summary:
     "I'm a Data Analyst passionate about solving business problems using data. My expertise includes Excel, SQL, Python, Power BI, and automation tools like n8n and Playwright. I enjoy transforming complex datasets into actionable insights, building interactive dashboards, and creating intelligent automation solutions that improve efficiency and decision-making.",
 
@@ -17,7 +16,7 @@ export const profile: Profile = {
 
   resumeUrl: "/resume/Updated_Resume.pdf",
 
-  availability: "Open to Data Analyst Opportunities",
+  availability: "Available for Full-Time Data Analyst Roles",
 };
 export const socials: SocialLink[] = [
   {
