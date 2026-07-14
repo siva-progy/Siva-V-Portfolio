@@ -36,7 +36,7 @@ export function Education() {
       id="education"
       index="04"
       eyebrow="Education"
-      title="built."
+      title="Where the foundation was built."
       lead="The academic path behind the work — and the project that best shows what I can do."
       width="content"
     >
