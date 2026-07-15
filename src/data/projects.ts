@@ -68,9 +68,9 @@ export const projects: Project[] = [
 
     featured: true,
 
-    links: {
-  github: "https://github.com/siva-progy/Siva-V-Portfolio",
-  video:"https://www.youtube.com/watch?v=TZ0cfVFx8Ec"
+   links: {
+  github: "https://github.com/siva-progy/Zepto-Order-Automation",
+  video: "https://www.youtube.com/watch?v=TZ0cfVFx8Ec"
   }
   }
 ];
